@@ -2,7 +2,6 @@
 ## Project Overview
 In this project, you will assume the role of a back-end developer working for an online retailer selling books. The goal is to develop a server-side application that stores, retrieves, and manages book ratings and reviews. The application provides essential features to allow users to access a variety of book-related functionalities.
 ## Feature
-<details>
 <ul>
     <li>Retrieve a list of all books available in the bookshop.</li>
     <li>Search for specific books using their ISBN code, author names, and titles.</li>
@@ -14,10 +13,8 @@ In this project, you will assume the role of a back-end developer working for an
     <li>Delete a book review (logged-in users can delete only their own reviews).</li>
     <li>Support for multiple users accessing the application simultaneously.</li>
 </ul>
-</details>
 ## API Endpoints
-<details>
-<summary>General API</summary>
+### General API
 <ol> 
     <li>Get ```/```</li>
     This endpoint retrieves all books in the storage.
@@ -41,6 +38,5 @@ In this project, you will assume the role of a back-end developer working for an
     <li>Delete ```/customer/auth/review/:isbn```</li>
     This endpoint allows logged-in users to delete their own reviews for a book identified by its ISBN. It ensures that users can manage their contributions while maintaining review integrity.
 </ol>
-</details>
 ## Implementation Details
 The server-side application is built using Node.js and Express.js. It serves as a RESTful web service, allowing seamless communication with a client-side application developed by another team member. The application supports session and JWT authentication to restrict certain operations to logged-in users.
